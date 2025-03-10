@@ -18,9 +18,9 @@ draw = function(){
   fill(196, 18, 101);
   
     if (mousePressed && mouseY < 400) {
-        fill(255, 0, 0); // Red when pressed
+        fill(255, 135, 189); // pink when pressed
     } else {
-        fill(196, 18, 101); // Green when not pressed
+        fill(135, 199, 255); // blue when not pressed
     }
       triangle(200, 104, 280, 280, 120, 280);  
   
@@ -53,8 +53,14 @@ draw = function(){
     text("Ask again later", 176, 200);
   }
     
-    drawStar(100, 350, color(235, 195, 52));
-  
+    drawStar(50, 200 );
+    drawStar(150, 150 );
+    drawStar(200, 180 );
+    drawStar(290, 380 );
+    drawStar(120, 300 );
+    drawStar(290, 300 );
+    drawStar(100, 350 );
+    drawStar(350, 100 );
 };
 
 mouseClicked = function(){
@@ -63,8 +69,8 @@ mouseClicked = function(){
 
 };
 
-var drawStar = function(starX, starY, starColor){
+var drawStar = function(starX, starY){
   textSize(20);
-  fill(starColor);
+
   text("⭐", starX, starY);
   }
