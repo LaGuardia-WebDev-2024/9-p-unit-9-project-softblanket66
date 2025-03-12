@@ -17,18 +17,27 @@ draw = function(){
   triangle(200, 104, 280, 280, 120, 280);
   fill(196, 18, 101);
   
+
+  
     if (mousePressed && mouseY < 400) {
         fill(255, 135, 189); // pink when pressed
     } else {
         fill(135, 199, 255); // blue when not pressed
     }
-      triangle(200, 104, 280, 280, 120, 280);  
-  
+    
+  triangle(200, 104, 280, 280, 120, 280);  
   fill(0,0,0);
+  
+  if(mousePressed){
+  fill(random(0,255),random(0,255),random(0,255));
+  }
+  
    if (answer == 1) {
     text("trust", 186, 200);
     text("yourself", 175, 229); 
   }
+
+  
   if (answer == 2) {
     text("Concentrate ", 166, 200);
     text("and ask again", 159, 229); 
@@ -53,6 +62,8 @@ draw = function(){
     text("Ask again later", 176, 200);
   }
     
+
+  
     drawStar(50, 200 );
     drawStar(150, 150 );
     drawStar(200, 180 );
